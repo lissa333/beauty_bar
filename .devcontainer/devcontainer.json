@@ -1,0 +1,26 @@
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.245.0/containers/javascript-node
+{
+	"name": "Node.js",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				"dbaeumer.vscode-eslint",
+				"codezombiech.gitignore",
+				"yzhang.markdown-all-in-one",
+				"wayou.vscode-todo-highlight",
+				"christian-kohler.npm-intellisense",
+				"eamodio.gitlens"
+			]
+		}
+	},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// "postCreateCommand": "make node_modules"
+}
